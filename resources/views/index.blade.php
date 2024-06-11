@@ -21,7 +21,7 @@
     </section>
 
     <section>
-        <h1>More Goes down here</h1>
+        <h1>More info goes down here</h1>
     </section>
 
 </x-layout.mainLayout>
