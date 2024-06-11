@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text: hsl(257, 21%, 94%);
+    --background: hsl(255, 20%, 4%);
+    --primary: hsl(262, 60%, 42%);
+    --secondary: hsl(325, 21%, 34%);
+    --accent: hsl(76, 84%, 52%);
+
+    --ani-short: all 120ms ease-in-out;
+}
+
+/** Global Constants **/
+body {
+    background-color: var(--background);
+}
+h1,h2,h3,h4,h5,h6,p,a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.full-screen {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.full-screen .background-img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .25;
+}
+.full-screen .content {
+    z-index: 2;
+}
+.main-title {
+    font-size: 36pt;
+}
+
+/** Index Page **/
+#index-hero > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2em;
+}
+#index-hero #social-icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5em;
+}
+#index-hero > #menu-icon {
+    z-index: 10;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    color: var(--text);
+    transition: var(--ani-short);
+    cursor: pointer;
+    will-change: contents;
+    backdrop-filter: drop-shadow(0, 0, 20px, var(--background));
+    background: none;
+}
+#index-hero > #menu-icon:hover {
+    backdrop-filter: drop-shadow(0, 0, 20px, var(--text));
+    background: none;
+}

@@ -1,13 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>INDEX PAGE</h1>
-</body>
-</html>
+<x-layout.mainLayout>
+
+    <section id="index-hero" class="full-screen">
+        <img class="background-img" alt="" src="{{ asset('img/backgrounds/shelby_cobra_la_canyons.webp') }}"/>
+
+        <div class="content">
+            <h1 class="main-title">Kyle Ross Beasley</h1>
+
+            <!-- Social Icons -->
+            <div id="social-icons">
+                <a href="https://github.com/KRBYdesign">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+                <a href="/">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon"></i>
+    </section>
+
+    <section>
+        <h1>More Goes down here</h1>
+    </section>
+
+</x-layout.mainLayout>
