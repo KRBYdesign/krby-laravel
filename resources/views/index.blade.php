@@ -17,12 +17,12 @@
             </div>
         </div>
 
-        <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon" data-active="false"></i>
+        <i class="fa-solid fa-ellipsis fa-2xl" id="menu-icon" data-active="false"></i>
 
         <div id="site-menu">
-            <a href="/" class="menu-item">Projects</a>
-            <a href="/" class="menu-item">Racing</a>
-            <a href="/" class="menu-item">Blog</a>
+            <a href="/projects" class="menu-item">Projects</a>
+            <a href="/racing" class="menu-item">Racing</a>
+            <a href="/blog" class="menu-item">Blog</a>
         </div>
     </section>
 

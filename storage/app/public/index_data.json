@@ -3,19 +3,19 @@
         "portable-timeclock" : {
             "title" : "Portable Time Clock",
             "thumbnail" : "node.webp",
-            "link" : "/",
+            "link" : "/projects/portable-time-clock",
             "text" : "Node.js based timeclock capable of running on an isolated network."
         },
         "project-2" : {
             "title" : "Project 2",
             "thumbnail" : "photoshop.webp",
-            "link" : "/",
+            "link" : "/projects/project-2",
             "text" : "This is the description of project 2"
         },
         "project-3" : {
             "title" : "Project 3",
             "thumbnail" : "laravel.webp",
-            "link" : "/",
+            "link" : "/projects/project-3",
             "text" : "This is the description for project 3. I have more here too"
         }
     }
