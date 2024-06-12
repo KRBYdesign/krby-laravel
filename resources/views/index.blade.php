@@ -41,9 +41,14 @@
                 <p class="title">Projects</p>
 
                 <div id="container">
-                @if(isset($index_data))
-                        @foreach($index_data['featured'] as $project)
-                            <x-shared.index-project-card :index-data="$project"/>
+                @if(isset($indexData))
+                        @foreach($indexData['featured'] as $project)
+                            <x-shared.index-project-card
+                                :title="$project['title']"
+                                :link="$project['link']"
+                                :thumbnail="$project['thumbnail']"
+                                :text="$project['text']"
+                            />
                         @endforeach
                     @endif
                 </div>

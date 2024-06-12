@@ -13,6 +13,6 @@ class HomeController extends Controller
         SEOTools::setTitle('Home');
         $index_data = json_decode(Storage::get('public/index_data.json'), true);
 
-        return view('index', ['index-data' => $index_data]);
+        return view('index', ['indexData' => $index_data]);
     }
 }

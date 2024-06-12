@@ -8,20 +8,16 @@ use Illuminate\View\Component;
 
 class indexProjectCard extends Component
 {
-    public string $title;
-    public string $link;
-    public string $thumbnail;
-
-    public string $text;
     /**
      * Create a new component instance.
      */
-    public function __construct($index_data)
+    public function __construct(
+        public $title,
+        public $link,
+        public $thumbnail,
+        public $text,
+    )
     {
-        $this->title = $index_data['title'];
-        $this->link = $index_data['link'];
-        $this->thumbnail = $index_data['thumbnail'];
-        $this->text = $index_data['text'];
     }
 
     /**
