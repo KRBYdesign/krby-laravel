@@ -11,8 +11,8 @@ class HomeController extends Controller
     public function index() : View
     {
         SEOTools::setTitle('Home');
-        $data = json_decode(Storage::get('public/index_data.json'), true);
+        $index_data = json_decode(Storage::get('public/index_data.json'), true);
 
-        return view('index', compact('data'));
+        return view('index', ['index-data' => $index_data]);
     }
 }

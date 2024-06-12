@@ -16,12 +16,12 @@ class indexProjectCard extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($data)
+    public function __construct($index_data)
     {
-        $this->title = $data['title'];
-        $this->link = $data['link'];
-        $this->thumbnail = $data['thumbnail'];
-        $this->text = $data['text'];
+        $this->title = $index_data['title'];
+        $this->link = $index_data['link'];
+        $this->thumbnail = $index_data['thumbnail'];
+        $this->text = $index_data['text'];
     }
 
     /**
