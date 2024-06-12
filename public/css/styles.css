@@ -10,7 +10,7 @@
     --secondary: hsl(325, 21%, 34%);
     --accent: hsl(76, 84%, 52%);
 
-    --ani-short: all 120ms ease-in-out;
+    --ani-short: all 120ms ease;
 }
 
 /** Global Constants **/
@@ -65,7 +65,15 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: row;
     column-gap: 1.5em;
 }
-#index-hero > #menu-icon {
+#index-hero #social-icons > a {
+    transition: var(--ani-short);
+    will-change: contents;
+    cursor: pointer;
+}
+#index-hero #social-icons > a:hover {
+    text-shadow: var(--text) 0 0 15px;
+}
+#index-hero #menu-icon {
     z-index: 10;
     position: absolute;
     top: 2em;
@@ -74,10 +82,7 @@ h1,h2,h3,h4,h5,h6 {
     transition: var(--ani-short);
     cursor: pointer;
     will-change: contents;
-    backdrop-filter: drop-shadow(0, 0, 20px, var(--background));
-    background: none;
 }
-#index-hero > #menu-icon:hover {
-    backdrop-filter: drop-shadow(0, 0, 20px, var(--text));
-    background: none;
+#index-hero #menu-icon:hover {
+    text-shadow: var(--text) 0 0 10px;
 }

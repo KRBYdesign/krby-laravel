@@ -20,8 +20,10 @@
         <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon"></i>
     </section>
 
-    <section>
-        <h1>More info goes down here</h1>
+    <section class="full-screen">
+        <div class="content">
+            <h1>More info goes down here</h1>
+        </div>
     </section>
 
 </x-layout.mainLayout>
