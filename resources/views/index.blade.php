@@ -20,9 +20,26 @@
         <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon"></i>
     </section>
 
-    <section class="full-screen">
-        <div class="content">
-            <h1>More info goes down here</h1>
+    <section class="full-screen" id="intro-container">
+        <div class="content" id="introduction">
+            <div class="frame">
+                <h1 class="title">Introduction</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab excepturi nulla quidem repellendus reprehenderit. Aut deserunt excepturi illo nulla omnis perferendis quia quibusdam repellendus veritatis voluptates. Assumenda distinctio dolor ea earum eligendi esse et expedita, laudantium maxime natus necessitatibus, nemo non nulla numquam provident quae qui quos sapiente, suscipit veniam.</p>
+
+                <div>
+
+                </div>
+            </div>
+
+            <div id="projects">
+                <p class="title">Projects</p>
+
+                <div id="container">
+                    @foreach($data['featured'] as $project)
+                    <x-shared.index-project-card :data="$project" />
+                    @endforeach
+                </div>
+            </div>
         </div>
     </section>
 

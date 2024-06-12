@@ -1,0 +1,22 @@
+{
+    "featured" : {
+        "portable-timeclock" : {
+            "title" : "Portable Time Clock",
+            "thumbnail" : "node.webp",
+            "link" : "/",
+            "text" : "Node.js based timeclock capable of running on an isolated network."
+        },
+        "project-2" : {
+            "title" : "Project 2",
+            "thumbnail" : "photoshop.webp",
+            "link" : "/",
+            "text" : "This is the description of project 2"
+        },
+        "project-3" : {
+            "title" : "Project 3",
+            "thumbnail" : "laravel.webp",
+            "link" : "/",
+            "text" : "This is the description for project 3. I have more here too"
+        }
+    }
+}
