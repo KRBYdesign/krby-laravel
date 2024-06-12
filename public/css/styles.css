@@ -139,6 +139,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #index-hero #site-menu > .menu-item:hover {
     text-shadow: var(--text) 0 0 1rem;
+    transition-delay: 0ms;
 }
 
 /* Intro section */
