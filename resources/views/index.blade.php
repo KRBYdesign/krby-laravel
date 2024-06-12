@@ -17,7 +17,13 @@
             </div>
         </div>
 
-        <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon"></i>
+        <i class="fa-solid fa-ellipsis fa-xl" id="menu-icon" data-active="false"></i>
+
+        <div id="site-menu">
+            <a href="/" class="menu-item">Projects</a>
+            <a href="/" class="menu-item">Racing</a>
+            <a href="/" class="menu-item">Blog</a>
+        </div>
     </section>
 
     <section class="full-screen" id="intro-container">
@@ -43,4 +49,5 @@
         </div>
     </section>
 
+    <script src="{{ asset('js/index.js') }}"></script>
 </x-layout.mainLayout>

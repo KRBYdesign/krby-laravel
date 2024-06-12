@@ -94,6 +94,36 @@ h1,h2,h3,h4,h5,h6 {
 #index-hero #menu-icon:hover {
     text-shadow: var(--text) 0 0 1rem;
 }
+#index-hero #site-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    width: 300px;
+}
+#index-hero #site-menu > .menu-item {
+    font-size: 28pt;
+    position: absolute;
+    top: 0;
+    right: -11rem;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    justify-content: right;
+    transition: var(--ani-short);
+}
+#index-hero #site-menu > .menu-item:nth-child(2) {
+    top: 6rem;
+    transition-delay: 60ms;
+}
+#index-hero #site-menu > .menu-item:nth-child(3) {
+    top: 12rem;
+    transition-delay: 120ms;
+}
+#index-hero #site-menu > .menu-item[data-visible='true'] {
+    right: 2rem;
+}
 
 /* Intro section */
 #introduction {
